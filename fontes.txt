@@ -13,3 +13,11 @@ http://wiki.inf.ufpr.br/maziero/lib/exe/fetch.php?media=so:so-cap06.pdf
 http://www.oocities.org/whisatugu/so_cap3.pdf
 
 http://e-tinet.com/linux/linux-10-gerenciadores-de-arquivos-que-devemos-conhecer/
+
+http://www.softpanorama.org/OFM/index.shtml
+
+https://www.google.com/patents/US6675176
+
+https://www.google.com/patents/US5047918
+
+https://en.wikipedia.org/wiki/File_manager#Navigational_file_manager
