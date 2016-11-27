@@ -1,0 +1,15 @@
+### Fontes ###
+
+http://pt.slideshare.net/alexandrend/ch11-25211526
+
+http://br.ccm.net/contents/647-o-que-e-um-arquivo
+
+https://pt.wikibooks.org/wiki/Sistemas_operacionais/Sistemas_de_arquivos#Conceitos_de_arquivos
+
+http://marcelmesmo.blogspot.com.br/2011/11/sistema-de-arquivos.html#.WDos2Vx-qM8
+
+http://wiki.inf.ufpr.br/maziero/lib/exe/fetch.php?media=so:so-cap06.pdf
+
+http://www.oocities.org/whisatugu/so_cap3.pdf
+
+http://e-tinet.com/linux/linux-10-gerenciadores-de-arquivos-que-devemos-conhecer/
