@@ -1,12 +1,28 @@
-\documentclass{article}
+\documentclass[12pt,a4paper,openany,oneside]{abntex2}
+\usepackage[brazil]{babel}
 \usepackage[utf8]{inputenc}
+\usepackage[normalem]{ulem}
+\usepackage[T1]{fontenc}\usepackage{lipsum}
+\usepackage{cmap}
 \usepackage{graphicx}
+\usepackage{datetime}
 
-\title{Gerenciador de arquivos}
-\author{Felipe}
-\date{Novembro, 2016}
-
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
+\titulo{Gerenciador de arquivos}
+\autor{Felipe Menino\\Gabriel Takarashi\\Kelvin Severino\\Glaucio de Melo\\Rodrigo Pavret}
+\local{São josé dos campos}
+\data{Novembro,2016}
+\orientador{Antonio Egydio Santiago Graça}
+\tipotrabalho{DISSERTAÇÃO DE MESTRADO}
+\pagenumbering{Roman}
+% % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \begin{document}
+
+\imprimircapa
+
+\imprimirfolhaderosto
+\pagenumbering{Roman}
+\tableofcontents
 
 \maketitle
 
@@ -128,6 +144,7 @@ Esta forma de gerenciador de arquivos é menos conhecida e mais antiga do que os
 
 
 Gerenciadores de arquivos ortodoxos (OFM) são gerenciadores de arquivos de textos com base em menus. Os gerenciadores OFM são a maior familha de gerenciadores de arquivos. Sua simplicidade permite aos desenvolvedores criar ferramentas e aplicações que utilizem deste gerenciador sem altera-lo. 
+Este é um padrão de gerenciador de arquivos muito utilizado em servidores por dar ao \textit{SYSADMIN} uma visão ampla do ambiente em que ele está trabalhando
 
 Abaixo são listados as propriedades que fazem dos OFM se tornarem gerenciadores de arquivos extremamente uteis para todo tipo de usuário
 
@@ -145,11 +162,24 @@ Agora que já se entende um pouco das propriedades empregadas nesses gerenciador
 	\begin{itemize}
 		\item São compostos por três janelas, duas dessas chamadas de painéis, que contem a interação com o sistema de arquivos, e a terceira é a interface gráfica. Os arquivos podem ser movidos de um painel para o outro, e esta é uma das caracteristicas que torna os OFM muito util para \textit{SYSADMINS};
 		\item A forma e atributos que estão sendo exibidos dos arquivos podem ser alterados da maneira com que o usuário desejar;
-		\item 
+		\item Uso de atalhos de teclado externos;
+		\item O gerenciador de arquivos OFM tira a necessidade da utilização do Mouse;
+		\item Toda a ajuda que o usuário necessita pode ser encontrada no manual de usuário;
+		\item Os tipos mais básicos de arquivos, como os de texto, tem visualização no momento em que é selecionado;
+		\item Interfaces com guias (Utilizado quando a GUI utiliza o OFM para gerenciar os arquivos)
 	\end{itemize}
 
+Todas essas caracteristicas tornam o gerenciador de arquivos ortodoxo bastante conhecido e utilizado por todo o tipo de usuário, como já citado anteriormente.
 \end{itemize}
 
+%Colocar uma explicação para cada uma das imagens
 %Colocar imagens de exemplo com o Gnome Commander, DuosCommander e o Norton Commander
+
+
+\subsection{\textit{Navigation file manager}}
+
+
+
+
 
 \end{document}
