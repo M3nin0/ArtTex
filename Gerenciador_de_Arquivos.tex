@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{graphicx}
 
 \title{Gerenciador de arquivos}
 \author{Felipe}
@@ -31,7 +32,31 @@ Os arquivos tem algumas caracteristicas que os definem, e são elas:
 \item Tipo: O tipo do arquivo está relacionado a que tipo de informação ele carrega, essa podendo ser uma música, video ou foto;
 \item Extensão: A extensão do arquivo é utilizada para que o S.O consiga identificar qual é o tipo do arquivo e qual programa se adequa para a execução daquele arquivo. É importante lembrar que a extensão do arquivo não interfere em seu tipo, este como já citado é apenas uma informação para que o sistema operacional identifique qual aplicativo se adequa a aquele arquivo, mas também não é um fator determinante para a execução do mesmo.
 
+\end{itemize}
+
+Existem ainda as funções que podem ser realizadas nos arquivos, essas são empregadas nas mais diversas atividades.
+
+\begin{itemize}
+
+\item Criação: Realiza a criação de um arquivo vazio;
+\item Exclusão: Remove o arquivo do espaço da memoria onde estava alocado;
+\item Abertura: Aloca na memoria os atributos necessário para a execução do arquivo;
+\item Fechamento: Remove da memoria os atributos alocados anteriormente na abertura;
+\item Leitura: Abre o arquivo apenas para leitura de seu conteúdo;
+\item Adição: Operação que permite apenas adicionar informações ao final do arquivo;
+\item Busca: Faz a leitura completa do arquivo, permitindo a pesquisa no mesmo;
+\item Ver atributos: Este faz a verificação dos atributos que foram concedidos para aquele arquivo, como permissões, dono entre outros;
+\item Renomear: Faz a renomeação do rotulo do arquivo, ou seja, muda seu nome.
 
 \end{itemize}
+
+\subsubsection{Alocação de arquivos}
+ 
+
+\subsection{Diretórios}
+
+Os diretorios também são parte vital para o entendimento do gerenciador de arquivos, isto porque é ele o responsavel pela organização de todos os arquivos. Veja que um diretorio é uma subdivisão lógica do sistema de arquivos, e seu intuito é  realizar a junção e organização dos arquivos.
+Os diretorios são organizados pelo sistema operacional de maneira hierarquica, assim todos os diretorios ficam alocados em outros diretorios, estes separados por usuários para que assim possam ser recuperados facilmente.
+
 
 \end{document}
