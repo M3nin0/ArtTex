@@ -13,8 +13,9 @@
 \section{Introdução}
 
 
+\section{Arquivos e diretorios}
 
-\section{Gerenciador de arquivos}
+Antes de se entrar nos gerenciadores de arquivos é necessário entender como o sistema operacional trata e armazena arquivos e diretórios, já que é através deste principio que o gerenciador de arquivos trabalha, assim o gerenciador de arquivo utiliza as funções proprias e do sistema de arquivos para realizar tarefas como a criação, exclusão, copia e renomeio dos diretorios e arquivos.
 
 \subsection{Arquivos}
 
@@ -59,17 +60,41 @@ Existem ainda as funções que podem ser realizadas nos arquivos, essas são emp
 \item Alocação contígua
 
 	\begin{itemize}
-		\item Este é o sistema mais simples para a alocação de arquivos em disco, e era utilizado nos primeiros sistemas operacionais. A técnica utilizada era bastante simples e consistia em armazenar arquivos em conjuntos de blocos contíguos (Blocos vizinhos), se destacava por ser bastante simples e ter um bom desempenho, por outro lado depois de uma certa quantidade de arquivos este sistema começou a aprensetar problemas além de que os arquivos não poderiam crescer muito.
+		\item Este é o sistema mais simples para a alocação de arquivos em disco, e era utilizado nos primeiros sistemas operacionais. A técnica utilizada era bastante simples e consistia em armazenar arquivos em conjuntos de blocos contíguos (Blocos vizinhos), se destacava por ser bastante simples e ter um bom desempenho, por outro lado depois de uma certa quantidade de arquivos este sistema começou a aprensetar problemas além de que os arquivos não poderiam crescer muito;
 	\end{itemize}
 
-%Vai uma figura aqui <--- !!!! -->
+%Vai uma figura aqui <--- alocContig.jpg -->
 
 \item Alocação por lista encadeada
 	
 	\begin{itemize}
-		\item 
+		\item Nesta forma de alocação é utilizada uma lista encadeada para indicar os espaços ocupados em disco pelos arquivos, descartando a utilização do sistema de arquivos contiguos. A primeira palavra de cada bloco é utilizada como um ponteiro para os próximos blocos que irão armazenar as informações do arquivo.Com este sistema é possivel utilizar qualquer bloco disponivel na unidade de armazenamento, não há fragmentação externa e a entrada do díretorio só precisa conter o endereço do primeiro bloco que está armazenando o arquivo. Por outro lado este é um formato de alocação lento, já que sempre ele terá de percorrer toda a lista encadeada para econtrar o arquivo requisitado, sem contar que implementar este método é bastante complicado;
+	\end{itemize}
+
+%Aqui vai outra imagem <-- alocEncad.jpg -->
+
+\item Alocação com lista encadeada usando tabela na memória
+
+	\begin{itemize}
+		\item Anteriormente foi citado que o problema da alocação por lista encadeada era a maneira com que os ponteiros se organizavam e assim a busca se tornava lenta. Para resolver este problema foi criada uma tabela nomeada FAT (\textit{File Allocation Table}), com este método no momento do acesso aleatório tudo se torna mais rápido, já que todo o esquema de ponteiros estará alocado na memória. Com todo o sistema de ponteiros na memória surgiu outro problema, a quantidade de memória utilizada para armazenar toda esta estrutura.;
+	\end{itemize}
+
+\item Alocação com lista usando um índice
+
+	\begin{itemize}
+		\item Para solucionar todos os problemas causados até então pelo sistema de alocação com listas, foi criado uma nova técnica. Esta agora criava um indíce para cada arquivo e os blocos que compoem este, e este indíce fica alocado em outro bloco. O diretório possui um ponteiro para o bloco onde está armazenado o indíce do arquivo requisitado. Mesmo utilizando o acesso randômico sua implementação é mais simples que os demais. O único problema que persegue este padrão é a necessidade de utilizar a unidade de armazenamento para alocar as tabelas. O que nos dias atuais não é um problema tão grande como anteriormente;
 
 	\end{itemize}
+
+% Aqui vai outa imagem <-- alocIndice.jpg -->
+
+\item Inode
+
+	\begin{itemize}
+		\item Em cada arquivo é armazenado uma pequena tabela, esta contendo todos os atributos e endereços dos blocos em disco deste arquivo. Os primeiros endereços ficam armazenados dentro do próprio arquivo, e caso esse seja pequeno todas as informações ficam armazenados no mesmo arquivo, assim o conteúdo do arquivo so é transmitido da memória para o disco quando o mesmo é aberto.
+	\end{itemize}
+
+
 
 \end{itemize}
 
@@ -79,5 +104,8 @@ Existem ainda as funções que podem ser realizadas nos arquivos, essas são emp
 Os diretorios também são parte vital para o entendimento do gerenciador de arquivos, isto porque é ele o responsavel pela organização de todos os arquivos. Veja que um diretorio é uma subdivisão lógica do sistema de arquivos, e seu intuito é  realizar a junção e organização dos arquivos.
 Os diretorios são organizados pelo sistema operacional de maneira hierarquica, assim todos os diretorios ficam alocados em outros diretorios, estes separados por usuários para que assim possam ser recuperados facilmente.
 
+\section{Gerenciador de arquivos}
+
+O gerenciador de arquivo é uma das partes vitais para o funcionamento do sistema operacional, ele é o responsavel pela criação, leitura, escrita e exclusão dos arquivos dentro da unidade de armazenamento.
 
 \end{document}
