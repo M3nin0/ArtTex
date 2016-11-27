@@ -10,7 +10,7 @@
 % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % % %
 \titulo{Gerenciador de arquivos}
 \autor{Felipe Menino\\Gabriel Takarashi\\Kelvin Severino\\Glaucio de Melo\\Rodrigo Pavret}
-\local{São josé dos campos}
+\local{São josé dos Campos}
 \data{Novembro,2016}
 \orientador{Antonio Egydio Santiago Graça}
 \tipotrabalho{monografia}
@@ -118,6 +118,7 @@ Existem ainda as funções que podem ser realizadas nos arquivos, essas são emp
 
 \end{itemize}
 
+Todos estes processos são bastante utilizados pelos gerenciadores de arquivos para a realização das funções requisitadas pelos usuários, já que como será visto a frente, o gerenciador de arquivos apenas geri as funções do sistemas de arquivos.
 
 \subsection{Diretórios}
 
@@ -130,8 +131,14 @@ O gerenciador de arquivo é uma das partes vitais para o funcionamento do sistem
 
 \subsection{Funcionamento}
 
+O gerenciador de arquivos trabalha juntamente com o sistema de arquivos, ele é o responsavel em gerenciar todas as ações que dizem respeito aos diretorios e arquivos presentes na unidade de disco. Ele trabalha diretamente com o sistema de arquivos, assim ele pega os comandos enviados pelo usuário e inerpreta enviado para o sistema de arquivos. Outro fato interessante é que boa parte das funções do gerenciador de arquivos está diretamente relacionada os sistema de arquivos utilizado.
+Todo o sistema de hierarquia das pastas e arquivos e gerido pelo gerenciador de arquivos, e ainda quando há indexação de arquivos por parte do sistema de arquivos, o gerenciador deve cuidar e manter a organização durante este processo, já que tudo gerando neste momento será utilzado por ele para realizar buscas nas arvores de arquivos do sistema operacional.
+
+%Imagem do funcionamento
 
 \subsection{Tipos de gerenciadores de arquivos}
+
+Os gerenciados de arquivos tem diversos tipos esses mudando ao longo dos tempos, permitindo que cada vez mais arquivos fossem empregados a unidade de disco.
 
 %Ainda terá mais conteúdo
 
