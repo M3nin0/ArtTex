@@ -1,0 +1,170 @@
+%O documentclass abaixo foi uma ajuda do Alexandre
+\documentclass[
+	12pt,				% tamanho da fonte
+	%openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	%twoside,			% para impressão em recto e verso. Oposto a oneside
+	openany,			%Para nao pular folhas quando um paragrafo novo começa. Oposto de Twoside e openright
+	a4paper,			% tamanho do papel.
+	chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	english,
+	brazil				% o último idioma é o principal do documento
+]{abntex2}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc} %Pacote de linguas
+\usepackage[normalem]{ulem}
+\usepackage[T1]{fontenc}
+\usepackage{lipsum}
+\usepackage{cmap}
+\usepackage{graphicx}
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite} % Citações padrão ABNT
+\usepackage{rotating}
+\usepackage{float}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Comando da image By Filipe
+
+\newcommand{\imagem}[3]{
+	\begin{figure}[htb]
+		\begin{center}
+			\includegraphics[scale=0.5]{#1}
+		\end{center}
+		\caption{#2}%\label{#3}
+	\end{figure}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\autor{2 semestre} % (\\) --> Pula linha
+
+\setlength{\parskip}{0.6cm}
+% Identação e espaçamento entre letras
+\setlength{\parindent}{1.3cm}
+\frenchspacing
+
+% Adicionando idioma
+\selectlanguage{brazil}
+
+\titulo{Sistemas de informação\\Revisão}
+\data{Abril, 2017}
+\tipotrabalho{Trabalho Acadêmico}
+
+
+\begin{document}
+
+\imprimircapa
+
+\imprimirfolhaderosto
+
+\tableofcontents
+
+\maketitle
+
+\newpage
+
+\chapter{Introdução}
+
+%Será feito por último no caso desta matéria
+
+\chapter{Sistemas de informação (SI)}
+
+
+Os sistemas de informações tem mudado drasticamente o mundo dos negócios e das pessoas, mas o que são sistemas e sistemas de informação ? 
+
+\textbf{Sistema}
+	'Sistema pode ser definido como um conjunto de elementos/componentes que mantêm relações entre si. Os componentes e as relações formam as características específicas do sistema. Para o conjunto de relações entre componentes se associa uma ação/dinâmica e resultados'
+
+\textbf{Sistema de informação}
+	'Um Sistema de Informação (SI) é um sistema cujo elemento principal é a informação. Seu objetivo é armazenar, tratar e fornecer informações de tal modo a apoiar as funções ou processos de uma organização'
+
+Um sistema de informação é composto de um sub-sistema social e outro sub-sistema automatizado, onde o social trata das pessoas e dos processos, e o automatizado sobre os computadores e redes de telecomunicação que interligam os elementos sociais.
+
+\textbf{Atividades com informações que contém sistemas de informação}
+	\begin{itemize}
+		\item Entrada;
+		\item Processamento;
+		\item Saída;
+		\item \textit{Feedback};
+		\item A ação de clientes e acionsitas também interage com o sistema de informação da empresa.
+	\end{itemize}
+
+\textbf{Os sitemas de informação vão muito aĺém dos computadores}
+
+Os sistemas de informação conseguem abrangir muito mais do que apenas computadores, eles conseguem unificar a organização, os processos e pessoas, e os computadores para que consiga oferecer solução para os mais diversos problemas da organização.
+Eles se divedem nos tópicos de:
+	\begin{itemize}
+		\item Organizacional: Encontrasse processos, as formas hierarquicas da empresa, e quando a empresa utiliza os sitemas de informação, a cultura organizacional desta reflete nos sitemas de informação. Veja a \textit{United Parcel Service} (UPS) que se preocupa muito com o cliente e a forma de atendimento;
+		\item Pessoa: As pessoas são quem desenvolvem, mantém e utilizam o sistema de informação, a ação de cada pessoa sobe os sistemas de informação podem afeta-lo de forma positiva ou negativa;
+		\item Tecnologia: São as plataformas ais quais os sistemas de informação são construidos sobre. Sendo \textit{Software}, \textit{Hardware}, gerenciamento de dados, redes e telecomunicação.
+	\end{itemize}
+
+\subsection{O papel dos sistemas de informação no ambiente de negócios contemporâneo}
+
+Cada vez mais os sistemas de informação vem tomando conta dos ambientes corporativos, já é extremamente comum ver empresas com sites e blogs para postar conteúdo com relação a seus serviços e desta forma disseminar sua marca. O \textit{marketing} digital já se tornou algo poderoso e é muito utilizado por todas as empresas. Para perceber isso basta entender que o famoso \textit{spam} foi modificado, estruturado e tornado uma grande ferramentas de \textit{marketing} com os \textit{e-mail marketing}. Até mesmos leis foram criadas para assegurar que dados e informações se tornassem algo a se preocupar por parte das empresas que oferecem serviços \textit{on-line}.
+
+\subsubsection{As novas tendências dos sistemas de informação}
+
+%https://antonioricardo.org/2013/03/28/o-que-e-saas-iaas-e-paas-em-cloud-computing-conceitos-basicos
+
+Como dito anteriormente, os SI crescem a cada dia, é possível perceber isso com o avanço de técnologias como:
+	\begin{itemize}
+		\item Computação em nuvem;
+		\item Software como serviço (SaaS - \textit{Software as a service});
+		\item Infraestrutura como serviço (IaaS - \textit{Infraestruct as a service});
+		\item Plataforma como serviço (PaaS - \textit{Plataform as a service});
+		\item Trabalho remoto amplamente utilizado;
+		\item Cada vez mais os serviços remotos diminuem os valores das operações.
+	\end{itemize}
+
+A evolução das técnologias trouxeram também novas formas de negócios, hoje existem trabalhos pare resolver problemas que a 5 anos atrás não existiam. Com esta evolução as empresas perceberam que seria necessário investir em tecnologia, para se manterem competitivas e assim se fez, hoje as empresas investem em T.I para conseguir:
+\begin{itemize}
+	\item Excelência operacional
+		\begin{itemize}
+			\item A excelência operacional gera mais lucros, veja que há empresas que são gigantes por terem técnologias que as auxiliam nisto, como exemplo a Amazon, empresa de varejo gigantesca que oferece os mais variados serviços. E com sistema de informação consegue realizar entregas de seus pedidos em até alguns minutos depois que foram feitos.
+		\end{itemize}
+	\item Novos produtos, serviços e modelos de negócios
+		\begin{itemize}
+			\item As novas técnologias permitem a criação de novas formas de negócios, como citado anteriormente, veja a indústria fonográfica que a alguns anos atrás era gigantesca e hoje perde cada vez mais espaço para empresas como o \textit{Spotify} que permitem que qualquer artista publique suas obras sem terem grandes fortunas.
+		\end{itemize}
+	\item Relacionamento mais estreito com clientes e fornecedores
+		\begin{itemize}
+			\item Com a melhora e velocidade dos atendimento subindo, os clientes sempre retornam.
+		\end{itemize}
+	\item Melhor tomada de decisão
+		\begin{itemize}
+			\item Sistemas como o \textit{Business Intelligence} ou BI conseguem interpretar as informações de todas as operações realizadas pela empresa, e emitir relatórios precisos sobre toda a empresa, permitindo uma tomada de decisão muito melhor.
+		\end{itemize}
+	\item Vantagem competitiva
+		\begin{itemize}
+			\item Dependendo do ramo em que a empresa atua, a técnologia pode fazer com que o produto oferecido pode ser superior ao concorrente e ainda mais barrato.
+		\end{itemize}
+	\item Sobrevivência
+		\begin{itemize}
+			\item Mesmo se a empresa não trabalha com técnologia ela será obrigada comprar técnologia para se manter ativa em seu ramo.
+		\end{itemize}
+\end{itemize}
+
+
+Assim é possível perceber que as empresas investem em técnologia para ter:
+	\begin{itemize}
+		\item Vantagens competitivas,
+		\item Melhores serviços,
+		\item Menos erros,
+		\item Maior precisão, 
+		\item Produtos de melhor qualidade,
+		\item Aperfeiçoamento,
+		\item Melhor eficiência,
+		\item Maior produtividade, 
+		\item Maiores oportunidades,
+		\item Administração mais eficiente,
+		\item Automatização de tarefas rotineiras,
+		\item Custos reduzidos,
+		\item Maior e melhor controle sobre as operações,
+		\item Melhores tomadas de decisões..
+	\end{itemize}
+
+\end{document}
