@@ -1,0 +1,176 @@
+%O documentclass abaixo foi uma ajuda do Alexandre
+\documentclass[
+	12pt,				% tamanho da fonte
+	%openright,			% capítulos começam em pág ímpar (insere página vazia caso preciso)
+	%twoside,			% para impressão em recto e verso. Oposto a oneside
+	openany,			%Para nao pular folhas quando um paragrafo novo começa. Oposto de Twoside e openright
+	a4paper,			% tamanho do papel.
+	chapter=TITLE,		% títulos de capítulos convertidos em letras maiúsculas
+	section=TITLE,		% títulos de seções convertidos em letras maiúsculas
+	%subsection=TITLE,	% títulos de subseções convertidos em letras maiúsculas
+	%subsubsection=TITLE,% títulos de subsubseções convertidos em letras maiúsculas
+	english,
+	brazil				% o último idioma é o principal do documento
+]{abntex2}
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc} %Pacote de linguas
+\usepackage[normalem]{ulem}
+\usepackage[T1]{fontenc}
+\usepackage{lipsum}
+\usepackage{cmap}
+\usepackage{graphicx}
+\usepackage[brazilian,hyperpageref]{backref}
+\usepackage[alf]{abntex2cite} % Citações padrão ABNT
+\usepackage{rotating}
+\usepackage{float}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Comando da image By Filipe
+
+\newcommand{\imagem}[3]{
+	\begin{figure}[htb]
+		\begin{center}
+			\includegraphics[scale=0.5]{#1}
+		\end{center}
+		\caption{#2}%\label{#3}
+	\end{figure}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\autor{2 semestre} % (\\) --> Pula linha
+
+\setlength{\parskip}{0.6cm}
+% Identação e espaçamento entre letras
+\setlength{\parindent}{1.3cm}
+\frenchspacing
+
+% Adicionando idioma
+\selectlanguage{brazil}
+
+\titulo{Sistemas de informação\\Revisão}
+\data{Abril, 2017}
+\tipotrabalho{Trabalho Acadêmico}
+
+
+\begin{document}
+
+\imprimircapa
+
+\imprimirfolhaderosto
+
+\tableofcontents
+
+\maketitle
+
+\newpage
+
+\chapter{Siglas}
+
+Neste documento irei listas cada sigra encontrada durante as aulas de S.I, para que possamos compreender melhor a estrutura do conteúdo passado pelo professor.
+
+\begin{itemize}
+
+\item ERP -Enterprise Resource Planning
+	\begin{itemize}
+		\item[] O ERP é um sistema que integra todos os dados e processos da empresa em um único sistema. Esta integração é total, ele únifica todos os processos da empresa, facilitando o acesso a informação.
+	\end{itemize}
+
+\item SIGE - Sistemas Integrado de Gestão Empresarial
+	\begin{itemize}
+		\item[] O Sige tem o mesmo significado que ERP, porém com as siglas em português.
+	\end{itemize}
+
+
+%http://www.ideacrm.com.br/marketing-de-relacionamento-b2b-afinal-o-que-%C3%A9-prm/
+\item PRM - Partner Relationship Management
+	\begin{itemize}
+		\item[] É um sistema que auxilia na relação com parceiros, este tem por objetivo facilitar a comunicação entre as empresas e seus parceiros.
+	\end{itemize}
+
+
+\item Data mining
+	\begin{itemize}
+		\item[] É o processo de explorar grandes quantidades de dados à procura de padrões consistentes, como regras de associação ou sequências temporais
+	\end{itemize}
+
+
+%http://www.administradores.com.br/artigos/marketing/crm-o-que-e-crm-e-como-funciona/34063/
+\item CRM - Customer Relationship Management
+	\begin{itemize}
+		\item[] De acordo com a Gartner o CRM é uma estratégia de negócio voltada ao entendimento e antecipação das necessidades e potenciais de uma empresa.
+		\item[] É um sistema utilizado para o contato com cliente e a facilitação dos canais de comunicação entre a empresa e seu cliente.
+	\end{itemize}
+
+\item ERM - Enterprise Risk Management
+	\begin{itemize}
+		\item[] Sistema que ajuda a empresa identificar, analisar, avaliar, monitorar e gerenciar seus riscos corporativos utilizando uma abordagem integrada.
+		\item[] A solução reúne todos os dados relacionados à gestão de riscos em um único ambiente, incluindo uma biblioteca reutilizável de riscos e seus respectivos controles e avaliações, eventos, tais como perdas e não conformidades, indicadores de desempenho e planos de tratamento.
+	\end{itemize}
+
+\item SAF - Sales Force Automation
+	\begin{itemize}
+		\item[] Sistema que ajuda as equipes de vendas a gerir todos os seus processos.
+	\end{itemize}
+
+\item EIS - Sistema de Informação Executiva
+	\begin{itemize}
+		\item[] Sistema criado com objetivo de oferecer facilidades para administração de grandes empresas.
+	\end{itemize}
+
+
+\item OLAP - Processo Analítico On-line
+	\begin{itemize}
+		\item[] Processo que realiza a ánalise de grandes quantias de dados, com diferentes perspectivas.
+	\end{itemize}
+
+\item DSS - Sistema de Suporte a Decisão
+	\begin{itemize}
+		\item[] Sistemas de apoio à decisão é uma classe de Sistemas de Informação. Refere-se simplesmente a um modelo genérico de tomada de decisão que analisa um grande número de variáveis para que seja possível o posicionamento a uma determinada questão.
+	\end{itemize}
+
+\item OLTP - Processamento On-line de Transação 
+	\begin{itemize}
+		\item[] Um tipo de sistema projetado para suportar aplicativos orientados à transações. Os sistemas OLTP são projetados para responder imediatamente às solicitações do usuário, e cada solicitação é considerada uma única transação. As solicitações podem envolver adicionar, recuperar, atualizar ou remover dados.
+	\end{itemize}
+
+
+\item EDP - Processamento Eletrônico de Dados
+	\begin{itemize}
+		\item[] Sigla para denominar que certas processos de dados são realizados pelo computador.
+	\end{itemize}
+
+
+\newpage
+As siglas demonstradas a seguir, são siglas utilizadas para denominar as estratégias de comunicação entre a empresa e seu cliente/parceiros.
+
+\item B2B - Business to Business
+	\begin{itemize}
+		\item[] São as formas de comunicação de empresa para empresa 
+	\end{itemize}
+
+\item B2C - Business to Consumer
+	\begin{itemize}
+		\item[] Formato de comunicação entre a empresa o consumidor
+	\end{itemize}
+
+\item C2C - Consumer to Consumer
+	\begin{itemize}
+		\item[] Comunicação de consumidor para consumidor
+	\end{itemize}
+
+\item B2G - Business to Government
+	\begin{itemize}
+		\item[] Empresa para governos
+	\end{itemize}
+
+\item B2E - Business-to-Employee
+	\begin{itemize}
+		\item[] Empresa para funcionário
+	\end{itemize}
+
+Todas essas siglas de B2X são utilizadas para denominar as multiplas faces da empresa para atrair investidores, parceiros e clientes para seu negócio.
+
+\end{itemize}
+\end{document}
